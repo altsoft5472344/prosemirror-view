@@ -77,6 +77,8 @@ export function initInput(view: EditorView) {
   ensureListeners(view);
 }
 
+console.log("inputinputinputinputinput");
+
 function setSelectionOrigin(view: EditorView, origin: string) {
   view.input.lastSelectionOrigin = origin;
   view.input.lastSelectionTime = Date.now();
