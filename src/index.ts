@@ -125,7 +125,6 @@ export class EditorView {
       | { mount: HTMLElement },
     props: DirectEditorProps
   ) {
-    console.log("[ProseMirror Debug] EditorView 생성됨", { place, props });
     this._props = props;
     this.state = props.state;
     this.directPlugins = props.plugins || [];
@@ -195,7 +194,6 @@ export class EditorView {
   /// Update the view's props. Will immediately cause an update to
   /// the DOM.
   update(props: DirectEditorProps) {
-    console.log("[ProseMirror Debug] EditorView.update 호출됨", props);
     if (props.handleDOMEvents != this._props.handleDOMEvents)
       ensureListeners(this);
     let prevProps = this._props;

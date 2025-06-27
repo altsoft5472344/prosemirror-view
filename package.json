@@ -1,7 +1,7 @@
 {
-  "name": "prosemirror-view",
-  "version": "1.40.0",
-  "description": "ProseMirror's view component",
+  "name": "prosemirror-view-altsoft",
+  "version": "1.40.2",
+  "description": "ProseMirror's view component with debug logging",
   "type": "module",
   "main": "dist/index.cjs",
   "module": "dist/index.js",
@@ -13,14 +13,21 @@
     },
     "./style/prosemirror.css": "./style/prosemirror.css"
   },
-  "sideEffects": ["./style/prosemirror.css"],
+  "sideEffects": [
+    "./style/prosemirror.css"
+  ],
   "style": "style/prosemirror.css",
   "license": "MIT",
+  "keywords": [
+    "prosemirror",
+    "editor",
+    "debug",
+    "logging"
+  ],
+  "author": "gimdong-yeong",
   "maintainers": [
     {
-      "name": "Marijn Haverbeke",
-      "email": "marijn@haverbeke.berlin",
-      "web": "http://marijnhaverbeke.nl"
+      "name": "gimdong-yeong"
     }
   ],
   "repository": {
